@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202" height="202" viewBox="0 0 202 202">
+  <defs>
+    <filter id="Многоугольник_1" x="33" y="11" width="164" height="180" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.729"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Эллипс_2" x="0" y="0" width="202" height="202" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="play_btn_hover" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Многоугольник_1)">
+      <path id="Многоугольник_1-2" data-name="Многоугольник 1" d="M51.338,15.014a10,10,0,0,1,17.324,0L111.348,89a10,10,0,0,1-8.662,15H17.314A10,10,0,0,1,8.652,89Z" transform="translate(167 38) rotate(90)" fill="#ffeace"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Эллипс_2)">
+      <g id="Эллипс_2-2" data-name="Эллипс 2" transform="translate(9 6)" fill="none" stroke="#ffeace" stroke-width="5">
+        <circle cx="92" cy="92" r="92" stroke="none"/>
+        <circle cx="92" cy="92" r="89.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

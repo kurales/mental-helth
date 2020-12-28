@@ -1,0 +1,161 @@
+/* Слайдер */
+.slick-slider{
+    position: relative;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+    padding: 15px 0;
+}
+.product-slidersmall .slick-list {
+    padding: 0 !important;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+.product-slidersmall .slick-track {
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+}
+/* Слайд */
+.slick-slide{
+    margin: 0 10px;
+    align-self: stretch;
+    display: flex;
+}
+.slider-header .slick-slide{
+    margin: 0;
+    position: relative;
+    height: 680px;
+}
+.slick-slide:focus {
+    outline: none;
+}
+.product-slidersmall .slick-slide {
+    margin: 0 3px;
+    opacity: 0.4;
+}
+.product-sliderbig .slick-slide {
+    display: flex;
+    align-items: center;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+.product-slidersmall .slick-slide.slick-current{
+    opacity: 1;
+}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+    position: absolute;
+    top: calc(50% + 30px);
+    transform: translateY(-50%);
+    z-index: 2;
+    font-size: 0;
+    border: 0;
+    background: 0;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+    left: -30px;
+}
+.slick-arrow.slick-prev::before {
+    content: '\f053';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.7);
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.slick-arrow.slick-prev:hover::before {
+    color: rgba(0, 0, 0, 0.4);
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: -30px;
+}
+.slick-arrow.slick-next::after {
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.7);;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.slick-arrow.slick-next:hover::after {
+    color: rgba(0, 0, 0, 0.4);
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+    position: absolute;
+    bottom: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+    border-color: transparent;
+    background-color:#FF9D33;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+/* Элемент точки */
+.slick-dots li button{
+    display: block;
+    box-sizing: border-box;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color :#CFD1D7;
+    margin: 0 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+@media (max-width: 1220px) {
+    .slick-arrow.slick-next {
+        right: -12px;
+    }
+    .slick-arrow.slick-prev {
+        left: -12px;
+    }
+}
+@media (max-width: 992px) {
+    .slick-dots {
+        bottom: -20px;
+    }
+}
+@media (max-width: 768px) {
+    .slick-slide {
+        justify-content: center;
+    }
+}
