@@ -62,7 +62,7 @@ html .main-btn:hover {
 html .main-btn.btn-animation {
   animation-name: btn-animation;
   animation-duration: 3.5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 5;
   animation-delay: 2s;
 }
 html .main-btn.btn-animation:hover {
@@ -550,8 +550,8 @@ html button {
   width: 16px;
   height: 16px;
   background-color: #42D50C;
+  box-shadow: 0 0 10px #42D50C;
   border-radius: 50%;
-  animation: neon 0.15s ease-in-out infinite alternate;
 }
 .header__btn {
   margin-top: 4.5rem;
